@@ -1,5 +1,6 @@
 module.exports = {
   path: "/demo",
+  method: 'get',
   async handle(ctx, next) {
     // 拿到请求输入
     let params = ctx.request.body;

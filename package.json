@@ -3,11 +3,12 @@
     "koa": "^2.13.4",
     "koa-body": "^4.2.0",
     "koa-cors": "^0.0.16",
+    "koa-logger": "^3.2.1",
     "koa-router": "^10.1.1",
     "koa-static": "^5.0.0",
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js DEBUG=*"
   }
 }

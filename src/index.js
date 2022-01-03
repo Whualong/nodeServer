@@ -1,5 +1,6 @@
 const Koa = require("koa");
 const koaBody = require("koa-body");
+const logger = require('koa-logger')
 const static = require('koa-static')
 const cors = require('koa-cors')
 const path = require('path')
@@ -8,6 +9,7 @@ let router = require("./router.js");
 
 const app = new Koa();
 
+app.use(logger())
 // 解析post请求体
 app.use(koaBody());
 

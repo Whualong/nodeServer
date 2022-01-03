@@ -1,5 +1,7 @@
+const fs = require('fs')
 module.exports = {
-  path: "/api/post_img",
+  path: "/uploadImg",
+  method:'post',
   async handle(ctx, next) {
     // 拿到请求输入
     let params = ctx.request.body;
