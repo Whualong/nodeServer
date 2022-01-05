@@ -8,10 +8,12 @@ const path = require('path')
 let router = require("./router.js");
 
 const app = new Koa();
-
+const kb = new koaBody({
+  multipart:true
+})
 app.use(logger())
 // 解析post请求体
-app.use(koaBody());
+app.use(kb);
 
 // 设置跨域 用不用插件都可
 // app.use(async (ctx, next) => {
