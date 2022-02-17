@@ -4,7 +4,7 @@ module.exports = {
   async handle(ctx, next) {
     // 拿到请求输入
     let params = ctx.request.body;
-    
+    console.log('hahha')
     // 业务逻辑处理
     console.log(params);
 
