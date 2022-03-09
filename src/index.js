@@ -26,10 +26,10 @@ app.use(cors())
 app.use(router.routes());
 
 // 静态文件处理
-app.use(static(path.join(__dirname)))
+// app.use(static(path.join(__dirname)))
 
 
 // 监听3001端口
-app.listen(3001, () => {
+app.listen(30000, () => {
   console.log("server run on 127.0.0.1:3001");
 });
